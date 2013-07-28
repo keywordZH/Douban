@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFF5F5F5"
+    android:orientation="vertical" >
+
+    <include layout="@layout/titlebar3" />
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/inner_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFF5F5F5"
+        android:paddingBottom="30dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip" >
+
+        <RelativeLayout
+            android:id="@+id/section1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/content_bg" >
+
+            <TextView
+                android:id="@+id/about_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/section1"
+                android:text="@string/about_title"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:textStyle="bold" >
+            </TextView>
+
+            <RelativeLayout
+                android:id="@+id/wrapper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/about_title"
+                android:paddingTop="5dip" >
+
+                <TextView
+                    android:id="@+id/about_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/wrapper"
+                    android:text="@string/about_content"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/about_website"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/about_content"
+                    android:autoLink="web"
+                    android:text="@string/about_website"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" >
+                </TextView>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/about_website"
+                    android:autoLink="web"
+                    android:text="@string/about_address"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" >
+                </TextView>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>
